@@ -8,7 +8,7 @@ import Heading2 from "../assets/home-heading-2.jpg";
 
 <BaseLayout>
   <main class="flex flex-col items-center w-full">
-    <div class="pt-32 h-[100vh] snap-y snap-center">
+    <div class="pt-32 h-[100vh] snap-y" id="home-first">
       <div class="flex felx-col items-center gap-6">
         <h1 class="text-[85px] font-bold">Build</h1>
         <h1 class="text-[85px] font-bold">Your</h1>
@@ -39,7 +39,7 @@ import Heading2 from "../assets/home-heading-2.jpg";
         </p>
       </div>
     </div>
-    <div class="h-screen w-screen bg-black">
+    <div class="h-screen w-screen bg-black" id="home-second">
       <p class="text-center max-w-3xl text-lg pt-20 snap-y snap-center">
         Our main focus is the Development of High-Quality Real Estate with
         State-of-the-Art Architecture. We Challenge Conventional Residential and
@@ -48,3 +48,34 @@ import Heading2 from "../assets/home-heading-2.jpg";
     </div>
   </main>
 </BaseLayout>
+
+<style>
+  #home-first {
+    scroll-snap-align: start;
+    background: linear-gradient(
+        -90deg,
+        rgba(0, 0, 0, 0.05) 1px,
+        transparent 1px
+      ),
+      linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+      linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+      linear-gradient(
+        transparent 3px,
+        #db582c 3px,
+        #db582c 78px,
+        transparent 78px
+      ),
+      /* linear-gradient(-90deg, #aaa 1px, transparent 1px), */
+        linear-gradient(
+          -90deg,
+          transparent 3px,
+          #db582c 3px,
+          #db582c 78px,
+          transparent 78px
+        );
+    /* linear-gradient(#aaa 1px, transparent 1px), #db582c; */
+    background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px,
+      80px 80px, 80px 80px, 80px 80px;
+  }
+</style>
