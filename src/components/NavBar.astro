@@ -1,0 +1,18 @@
+---
+import NavItem from "./NavItem.astro";
+---
+
+<nav
+  class="sticky top-0 h-14 w-screen p-2 px-12 bg-transparent flex items-center justify-between"
+>
+  <a href="/" class="text-2xl font-bold tracking-tighter select-none">
+    SK Associates
+  </a>
+  <ul class="flex items-center gap-6">
+    <NavItem path="/" title="Home" />
+    <NavItem path="/projects" title="Projects" />
+    <NavItem path="/about" title="About" />
+    <NavItem path="/services" title="Services" />
+    <NavItem path="/contact" title="Contact" />
+  </ul>
+</nav>

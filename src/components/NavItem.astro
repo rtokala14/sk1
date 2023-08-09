@@ -1,0 +1,14 @@
+---
+const url = Astro.url;
+
+const { path, title } = Astro.props;
+---
+
+<li>
+  <a
+    class={url.pathname === path
+      ? "underline underline-offset-4 font-semibold text-lg"
+      : "hover:font-medium"}
+    href={path}>{title}</a
+  >
+</li>

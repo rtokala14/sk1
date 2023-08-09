@@ -1,0 +1,16 @@
+---
+import NavBar from "../components/NavBar.astro";
+---
+
+<html>
+  <head>
+    <title>SK Associates</title>
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body class="min-h-screen w-screen flex flex-col items-center text-white">
+    <main class="h-screen w-screen bg-orange">
+      <NavBar />
+      <slot />
+    </main>
+  </body>
+</html>
