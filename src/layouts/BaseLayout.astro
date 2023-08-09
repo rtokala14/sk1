@@ -10,7 +10,21 @@ import { ViewTransitions } from "astro:transitions";
     <link rel="stylesheet" href="/css/app.css" />
 
     <ViewTransitions />
-  </head>
+    <style is:global>
+      ::-webkit-scrollbar {
+        width: 8px;
+        margin-top: 5px;
+        /* background: transparent; */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #fff;
+      }
+      ::-webkit-scrollbar-track {
+        background: #db582c;
+      }
+    </style></head
+  >
+
   <body
     class="min-h-screen overflow-x-hidden w-screen flex flex-col items-center text-white"
   >
