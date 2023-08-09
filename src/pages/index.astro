@@ -1,9 +1,50 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Heading1 from "../assets/home-heading-1.jpg";
+import Heading2 from "../assets/home-heading-2.jpg";
 ---
 
 <BaseLayout>
-  <main>
-    <div class="">Hello</div>
+  <main class="flex flex-col items-center w-full">
+    <div class="pt-32 h-[100vh] snap-y snap-center">
+      <div class="flex felx-col items-center gap-6">
+        <h1 class="text-[85px] font-bold">Build</h1>
+        <h1 class="text-[85px] font-bold">Your</h1>
+        <Image
+          src={Heading1}
+          height={150}
+          class={"overflow-clip rounded-full"}
+          alt={"A commercial building."}
+        />
+        <h1 class="text-[85px] font-bold">Dream</h1>
+      </div>
+      <div class="flex felx-col items-center gap-6">
+        <Image
+          src={Heading2}
+          height={150}
+          class={"overflow-clip rounded-full"}
+          alt={"A residential building."}
+        />
+        <h1 class="text-[85px] font-bold">Property</h1>
+        <h1 class="text-[85px] font-bold">With</h1>
+        <h1 class="text-[85px] font-bold">SK</h1>
+      </div>
+      <div class="pt-14 flex w-full items-center justify-center">
+        <p class="text-center max-w-3xl text-lg">
+          Our main focus is the Development of High-Quality Real Estate with
+          State-of-the-Art Architecture. We Challenge Conventional Residential
+          and Commercial Construction
+        </p>
+      </div>
+    </div>
+    <div class="h-screen w-screen bg-black">
+      <p class="text-center max-w-3xl text-lg pt-20 snap-y snap-center">
+        Our main focus is the Development of High-Quality Real Estate with
+        State-of-the-Art Architecture. We Challenge Conventional Residential and
+        Commercial Construction
+      </p>
+    </div>
   </main>
 </BaseLayout>

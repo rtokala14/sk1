@@ -1,16 +1,22 @@
 ---
 import NavBar from "../components/NavBar.astro";
+
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <html>
   <head>
     <title>SK Associates</title>
     <link rel="stylesheet" href="/css/app.css" />
+
+    <ViewTransitions />
   </head>
-  <body class="min-h-screen w-screen flex flex-col items-center text-white">
-    <main class="h-screen w-screen bg-orange">
+  <body
+    class="min-h-screen overflow-x-hidden w-screen flex flex-col items-center text-white"
+  >
+    <div class="min-h-screen w-screen bg-orange">
       <NavBar />
-      <slot />
-    </main>
+      <slot transition:animate="slide" />
+    </div>
   </body>
 </html>
