@@ -8,8 +8,8 @@ import Heading2 from "../assets/home-heading-2.jpg";
 
 <BaseLayout>
   <main class="flex flex-col items-center w-full">
-    <div class="pt-32 h-[100vh] snap-y" id="home-first">
-      <div class="flex felx-col items-center gap-6">
+    <div class="pt-32 h-[100vh] w-full snap-y" id="home-first">
+      <div class="flex w-full justify-center items-center gap-6">
         <h1 class="text-[85px] font-bold">Build</h1>
         <h1 class="text-[85px] font-bold">Your</h1>
         <Image
@@ -20,7 +20,7 @@ import Heading2 from "../assets/home-heading-2.jpg";
         />
         <h1 class="text-[85px] font-bold">Dream</h1>
       </div>
-      <div class="flex felx-col items-center gap-6">
+      <div class="flex items-center w-full justify-center gap-6">
         <Image
           src={Heading2}
           height={150}
@@ -52,30 +52,9 @@ import Heading2 from "../assets/home-heading-2.jpg";
 <style>
   #home-first {
     scroll-snap-align: start;
-    background: linear-gradient(
-        -90deg,
-        rgba(0, 0, 0, 0.05) 1px,
-        transparent 1px
-      ),
-      linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-      linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-      linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-      linear-gradient(
-        transparent 3px,
-        #db582c 3px,
-        #db582c 78px,
-        transparent 78px
-      ),
-      /* linear-gradient(-90deg, #aaa 1px, transparent 1px), */
-        linear-gradient(
-          -90deg,
-          transparent 3px,
-          #db582c 3px,
-          #db582c 78px,
-          transparent 78px
-        );
-    /* linear-gradient(#aaa 1px, transparent 1px), #db582c; */
-    background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px,
-      80px 80px, 80px 80px, 80px 80px;
+    background-color: #ff5700;
+    opacity: 1;
+    background-image: radial-gradient(#f68138 1.3px, #ff5700 1.3px);
+    background-size: 26px 26px;
   }
 </style>

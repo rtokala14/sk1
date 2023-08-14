@@ -1,5 +1,5 @@
 ---
-import NavItem from "./NavItem.astro";
+import NavItem from "./NavItem";
 ---
 
 <nav
@@ -9,10 +9,10 @@ import NavItem from "./NavItem.astro";
     SK Associates
   </a>
   <ul class="flex items-center gap-6">
-    <NavItem path="/" title="Home" />
-    <NavItem path="/projects" title="Projects" />
-    <NavItem path="/about" title="About" />
-    <NavItem path="/services" title="Services" />
-    <NavItem path="/contact" title="Contact" />
+    <NavItem client:only="react" path="/" title="Home" />
+    <NavItem client:only="react" path="/projects" title="Projects" />
+    <NavItem client:only="react" path="/about" title="About" />
+    <NavItem client:only="react" path="/services" title="Services" />
+    <NavItem client:only="react" path="/contact" title="Contact" />
   </ul>
 </nav>
